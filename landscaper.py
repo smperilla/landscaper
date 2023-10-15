@@ -17,8 +17,10 @@ while True:
     print("1. Cut grass with teeth")
     print("2. Buy scissors")
     print("3. Cut grass with scissors")
-    print("4. Buy old-timey push lawnmower")    
-    print("5. Buy fancy battery-powered lawnmower")
+    print("4. Buy old-timey push lawnmower")  
+    print("5. Cut grass with old-timey push lawnmower")  
+    print("6. Buy fancy battery-powered lawnmower")
+    print("7. Cut grass with fancy battery-powered lawnmower")
 
 
 
@@ -45,14 +47,22 @@ while True:
             money -= 25
             tools.append('old-timey push lawnmower')
             print("You've bought an old-timey push lawnmower.")
-
+    
     elif choice == '5':
+        money += 50
+        print("You've cut rass with an old-timey push lawnmower.")
+
+    elif choice == '6':
         if money >= 250:
             money -= 250
             tools.append('fancy battery-powered lawnmower')
             print("You've bought a fancy battery-powered lawnmower.")
+
+    elif choice == '7':
+        money += 100
+        print("You've cut rass with a fancy battery-powered lawnmower.")
     
-    
+ 
     
 
 
