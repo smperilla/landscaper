@@ -1,4 +1,5 @@
-money = 0
+money = 1000
+
 tools = []
 win_scenario = 1000
 
@@ -21,6 +22,8 @@ while True:
     print("5. Cut grass with old-timey push lawnmower")  
     print("6. Buy fancy battery-powered lawnmower")
     print("7. Cut grass with fancy battery-powered lawnmower")
+    print("8. Hire a team of starving students")
+    print("9. Cut grass with a team of starving students")
 
 
 
@@ -61,6 +64,19 @@ while True:
     elif choice == '7':
         money += 100
         print("You've cut rass with a fancy battery-powered lawnmower.")
+
+    elif choice == '8':
+        if money >= 500:
+            money -= 500
+            tools.append('team')
+            print("You've bought a team of starving students.")
+    
+    elif choice == '9':
+        money += 250
+        print("You've cut rass with a team of starving students.")
+
+  
+
     
  
     
