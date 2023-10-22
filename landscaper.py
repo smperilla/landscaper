@@ -1,7 +1,7 @@
 money = 0
 
 tools = []
-win_scenario = 1000
+
 
 def status():
     print(f"You have ${money}.")
@@ -10,7 +10,7 @@ def status():
 while True:
     status()
 
-    if money >= win_scenario and 'team' in tools:
+    if money >= 1000 and 'team' in tools:
         print("You've won the game.")
         break
 
@@ -42,8 +42,11 @@ while True:
             print("You don't have enough money!")
     
     elif  choice == '3':
-        money += 5
-        print("You've cut grass with rusty scissors.")
+        if 'rusty scissors' in tools:
+            money += 5
+            print("You've cut grass with rusty scissors.")
+        else: 
+            print("You don't have rusty scissors!")
 
     elif choice == '4':
         if money >= 25:
@@ -54,8 +57,11 @@ while True:
             print("You don't have enough money!")
     
     elif choice == '5':
-        money += 50
-        print("You've cut rass with an old-timey push lawnmower.")
+        if 'old-timey push lawnmower' in tools:
+            money += 50
+            print("You've cut grass with an old-timey push lawnmower.")
+        else:
+            print("You don't have an old-timey push lawnmower!")
 
     elif choice == '6':
         if money >= 250:
@@ -66,8 +72,11 @@ while True:
             print("You don't have enough money!")
 
     elif choice == '7':
-        money += 100
-        print("You've cut rass with a fancy battery-powered lawnmower.")
+        if 'fancy battery-powered lawnmower' in tools:
+            money += 100
+            print("You've cut grass with a fancy battery-powered lawnmower.")
+        else:
+            print("You don't have a fancy battery-powered lawnmower!")
 
     elif choice == '8':
         if money >= 500:
@@ -78,8 +87,11 @@ while True:
             print("You don't have enough money!")
     
     elif choice == '9':
-        money += 250
-        print("You've cut grass with a team of starving students.")
+        if 'team' in tools:
+            money += 250
+            print("You've cut grass with a team of starving students.")
+        else:
+            print("You don't have a team of starving students!")
   
 
     
